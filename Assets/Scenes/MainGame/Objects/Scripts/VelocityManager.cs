@@ -1,14 +1,17 @@
 using UnityEngine;
+using Unity.VisualScripting;
 
 public class VelocityManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [Header("Velocity Atributes")]
+    [SerializeField] private GameObject Background;
+    [SerializeField] private GameObject Player;
+
     void Start()
     {
         
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         
