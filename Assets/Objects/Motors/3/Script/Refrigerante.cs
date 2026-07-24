@@ -27,7 +27,7 @@ public class Refrigerante : MotorPart, IPointerDownHandler, IPointerUpHandler
 
     void Update()
     {
-        Debug.Log("Refrigerante State: " + currentState.ToString());
+        //Debug.Log("Refrigerante State: " + currentState.ToString());
 
         //En base al booleano isFilling, se aumenta o disminuye el nivel de refrigerante y se actualiza el porcentaje correspondiente
         if (isFilling)
