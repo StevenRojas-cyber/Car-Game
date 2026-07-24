@@ -1,32 +1,23 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-[System.Serializable]
 public struct motorParts
 {
-    public GameObject Manija;
-    public GameObject Cuerda;
-    public GameObject Refrigeracion;
-    public GameObject Hamster;
+    public Refrigerante Refrigerante;
 }
 
 public class Motor : MonoBehaviour
 {
+    [Header("Motor Parts")]
+    [SerializeField] public GameObject Refrigerante;
 
-    public virtual void motorPartDamaged()
-    {
-    
-    }
 
-    public virtual void motorPartRepaired()
-    {
-
-    }
+    public motorParts PlayerMotorParts;
 
 
     void Start()
     {
-        
+        PlayerMotorParts.Refrigerante = Refrigerante.GetComponent<Refrigerante>();
     }
 
     
