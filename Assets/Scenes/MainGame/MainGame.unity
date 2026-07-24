@@ -2195,23 +2195,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4327488369184210598, guid: 865d3bf812e0d7042a039bf8aed8d565, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.5121782
+      value: 2.4286177
       objectReference: {fileID: 0}
     - target: {fileID: 4327488369184210598, guid: 865d3bf812e0d7042a039bf8aed8d565, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.5121782
+      value: 2.4286177
       objectReference: {fileID: 0}
     - target: {fileID: 4327488369184210598, guid: 865d3bf812e0d7042a039bf8aed8d565, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.5121782
+      value: 2.4286177
       objectReference: {fileID: 0}
     - target: {fileID: 4327488369184210598, guid: 865d3bf812e0d7042a039bf8aed8d565, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.5
+      value: 2.44
       objectReference: {fileID: 0}
     - target: {fileID: 4327488369184210598, guid: 865d3bf812e0d7042a039bf8aed8d565, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.18
+      value: -3.3
       objectReference: {fileID: 0}
     - target: {fileID: 4327488369184210598, guid: 865d3bf812e0d7042a039bf8aed8d565, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2278,6 +2278,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   PartName: Refrigerante
   currentState: 0
+  FillSpeed: 1
+  MaxRefrigeranteLevel: 10
+  CurrentRefrigeranteLevel: 10
+  Level: {fileID: 27451444}
 --- !u!4 &8532612850041410864 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4327488369184210598, guid: 865d3bf812e0d7042a039bf8aed8d565, type: 3}
