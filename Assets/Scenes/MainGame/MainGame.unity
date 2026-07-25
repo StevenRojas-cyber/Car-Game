@@ -2286,6 +2286,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1921013125 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 39358540560434115, guid: 706aa75d17eb30f4bb4e331cc7dbc7e7, type: 3}
+  m_PrefabInstance: {fileID: 6538696545558439073}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2002450102
 GameObject:
   m_ObjectHideFlags: 0
@@ -2855,6 +2860,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: MotorPart
       objectReference: {fileID: 0}
+    - target: {fileID: 8609759763738223188, guid: 706aa75d17eb30f4bb4e331cc7dbc7e7, type: 3}
+      propertyPath: Sprite
+      value: 
+      objectReference: {fileID: 1921013125}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
