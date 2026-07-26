@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: b9489c1ff4d3fd748b4918b684311126
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1063515494705457824
+    second: HAMSTER CORRIENDO_0
+  - first:
+      213: 616115454457616578
+    second: HAMSTER CORRIENDO_1
+  - first:
+      213: -8697238899510725534
+    second: HAMSTER CORRIENDO_2
+  - first:
+      213: -2550252225936244797
+    second: HAMSTER CORRIENDO_3
+  - first:
+      213: 8302330927734282130
+    second: HAMSTER CORRIENDO_4
+  - first:
+      213: 4686283303067414403
+    second: HAMSTER CORRIENDO_5
+  - first:
+      213: 261598658427089325
+    second: HAMSTER CORRIENDO_6
+  - first:
+      213: -1317323257982828554
+    second: HAMSTER CORRIENDO_7
+  - first:
+      213: 3906652461090618643
+    second: HAMSTER CORRIENDO_8
+  - first:
+      213: -7958718587595514288
+    second: HAMSTER CORRIENDO_9
+  - first:
+      213: -3327626856876643296
+    second: HAMSTER CORRIENDO_10
+  - first:
+      213: -2318364879564433259
+    second: HAMSTER CORRIENDO_11
+  - first:
+      213: 9037854673893942959
+    second: HAMSTER CORRIENDO_12
+  - first:
+      213: -1214241090429435895
+    second: HAMSTER CORRIENDO_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HAMSTER CORRIENDO_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 423
+        width: 639
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aaea0b25bd52ce00800000000000000
+      internalID: 1063515494705457824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HAMSTER CORRIENDO_1
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 410
+        width: 649
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c81393ddb1ec8800800000000000000
+      internalID: 616115454457616578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HAMSTER CORRIENDO_2
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 412
+        width: 660
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26434f30d433d4780800000000000000
+      internalID: -8697238899510725534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HAMSTER CORRIENDO_3
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 0
+        width: 3296
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cfbb61cc1fab9cd0800000000000000
+      internalID: -2550252225936244797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HAMSTER CORRIENDO_4
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 412
+        width: 1299
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297575bbdfdc73370800000000000000
+      internalID: 8302330927734282130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HAMSTER CORRIENDO_5
+      rect:
+        serializedVersion: 2
+        x: 3294
+        y: 428
+        width: 643
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f6d2cc5d5090140800000000000000
+      internalID: 4686283303067414403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HAMSTER CORRIENDO_6
+      rect:
+        serializedVersion: 2
+        x: 3953
+        y: 422
+        width: 660
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1f345089261a300800000000000000
+      internalID: 261598658427089325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HAMSTER CORRIENDO_7
+      rect:
+        serializedVersion: 2
+        x: 4384
+        y: 420
+        width: 138
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ffb291f97de7bde0800000000000000
+      internalID: -1317323257982828554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HAMSTER CORRIENDO_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 659
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d363c07b7373630800000000000000
+      internalID: 3906652461090618643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HAMSTER CORRIENDO_9
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 0
+        width: 106
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e12179c93fc8190800000000000000
+      internalID: -7958718587595514288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HAMSTER CORRIENDO_10
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 9
+        width: 138
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02c61d21105e1d1d0800000000000000
+      internalID: -3327626856876643296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HAMSTER CORRIENDO_11
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 10
+        width: 660
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59812dddc6383dfd0800000000000000
+      internalID: -2318364879564433259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HAMSTER CORRIENDO_12
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 0
+        width: 106
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa66d09f0f8ec6d70800000000000000
+      internalID: 9037854673893942959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HAMSTER CORRIENDO_13
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 9
+        width: 138
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900454d5926262fe0800000000000000
+      internalID: -1214241090429435895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HAMSTER CORRIENDO_0: 1063515494705457824
+      HAMSTER CORRIENDO_1: 616115454457616578
+      HAMSTER CORRIENDO_10: -3327626856876643296
+      HAMSTER CORRIENDO_11: -2318364879564433259
+      HAMSTER CORRIENDO_12: 9037854673893942959
+      HAMSTER CORRIENDO_13: -1214241090429435895
+      HAMSTER CORRIENDO_2: -8697238899510725534
+      HAMSTER CORRIENDO_3: -2550252225936244797
+      HAMSTER CORRIENDO_4: 8302330927734282130
+      HAMSTER CORRIENDO_5: 4686283303067414403
+      HAMSTER CORRIENDO_6: 261598658427089325
+      HAMSTER CORRIENDO_7: -1317323257982828554
+      HAMSTER CORRIENDO_8: 3906652461090618643
+      HAMSTER CORRIENDO_9: -7958718587595514288
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

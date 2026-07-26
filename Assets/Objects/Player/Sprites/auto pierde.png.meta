@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: a8172834a0ac6ad40813600e5f6b7201
+guid: 44f361f2514ffea4eaa14c1719c67e92
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -1584800816116956170
     second: auto pierde_0
+  - first:
+      213: 1147669946460493160
+    second: auto pierde_1
+  - first:
+      213: -4754295421983517831
+    second: auto pierde_2
+  - first:
+      213: 5577435755444788341
+    second: auto pierde_3
+  - first:
+      213: -2863757976173784488
+    second: auto pierde_4
+  - first:
+      213: 7806516523271086397
+    second: auto pierde_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -117,11 +132,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1226
-        height: 2958
+        y: 1
+        width: 1224
+        height: 2959
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -134,11 +149,121 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: auto pierde_1
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 1
+        width: 1228
+        height: 2959
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8655b265cb75def00800000000000000
+      internalID: 1147669946460493160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auto pierde_2
+      rect:
+        serializedVersion: 2
+        x: 2451
+        y: 1
+        width: 1228
+        height: 2959
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9731867c089550eb0800000000000000
+      internalID: -4754295421983517831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auto pierde_3
+      rect:
+        serializedVersion: 2
+        x: 3677
+        y: 1
+        width: 1228
+        height: 2959
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c59d0e448076d40800000000000000
+      internalID: 5577435755444788341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auto pierde_4
+      rect:
+        serializedVersion: 2
+        x: 4903
+        y: 1
+        width: 1228
+        height: 2959
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85258732b43e148d0800000000000000
+      internalID: -2863757976173784488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auto pierde_5
+      rect:
+        serializedVersion: 2
+        x: 6139
+        y: 0
+        width: 1225
+        height: 2960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d316aceca61565c60800000000000000
+      internalID: 7806516523271086397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d615d5ab4bcb4a14f84df4924349500b
     internalID: 0
     vertices: []
     indices: 
@@ -149,6 +274,11 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       auto pierde_0: -1584800816116956170
+      auto pierde_1: 1147669946460493160
+      auto pierde_2: -4754295421983517831
+      auto pierde_3: 5577435755444788341
+      auto pierde_4: -2863757976173784488
+      auto pierde_5: 7806516523271086397
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -8,6 +8,7 @@ public class Hamster : MotorPart, IPointerClickHandler
     [Header("Hamster Properties")]
     [SerializeField] private float SleepTimeRemainingMultiplier = 1f;
     [SerializeField] private float HamsterSleepTime = 5f;
+    [SerializeField] private Animator HamAnimator;
     [SerializeField] private SpriteRenderer HamsterSprite;
     [SerializeField] private TMP_Text SleepTimeText;
 
@@ -28,6 +29,8 @@ public class Hamster : MotorPart, IPointerClickHandler
         { 
             HamsterSprite.color = Color.red;
             currentState = PartsStates.Damaged;
+
+            HamAnimator.SetBool("isRunning", false);
         }
 
         if (!IsHamsterSleeped && HamsterSleepTime > 0f && HamsterSleepTime <= 50f)
@@ -35,6 +38,8 @@ public class Hamster : MotorPart, IPointerClickHandler
             SleppTimeRemaining();
             currentState = PartsStates.Danger;
             HamsterSprite.color = Color.yellow;
+
+            HamAnimator.SetBool("isRunning", true);
         }
 
         if (!IsHamsterSleeped && HamsterSleepTime >= 50f)
@@ -42,6 +47,7 @@ public class Hamster : MotorPart, IPointerClickHandler
             SleppTimeRemaining();
             HamsterSprite.color = Color.green;
             currentState = PartsStates.Good;
+            HamAnimator.SetBool("isRunning", true);
         }
         
         
