@@ -5,7 +5,6 @@ public class Obstacle : MonoBehaviour
 {
     [Header("Obtacle Attributes")]
     [SerializeField] private BoxCollider2D HitBox;
-    [SerializeField] private GameObject BackGround;
     [SerializeField] private float moveMultiplier;
 
 
@@ -13,13 +12,7 @@ public class Obstacle : MonoBehaviour
 
     void Start()
     {
-        if (BackGround == null) return;
-
-        scrollVelocity = BackGround.GetComponent<Scroller>();
-
-        if (scrollVelocity == null) return;
-
-        moveMultiplier = scrollVelocity.GetScrollSpeed();
+        
 
 
     }
