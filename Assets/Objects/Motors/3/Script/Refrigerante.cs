@@ -12,6 +12,7 @@ public class Refrigerante : MotorPart, IPointerDownHandler, IPointerUpHandler
     [SerializeField] private TMP_Text Level;
 
     private bool isFilling = false;
+    private bool ReciveImpact = false;
     private float CurrentLevelFiled = 10f;
 
     void Start()
@@ -27,7 +28,12 @@ public class Refrigerante : MotorPart, IPointerDownHandler, IPointerUpHandler
 
     void Update()
     {
-        //Debug.Log("Refrigerante State: " + currentState.ToString());
+        if (ReciveImpact)
+        {
+            ReciveImpact = false;
+            CurrentLevelFiled = 0;
+        }
+
 
         //En base al booleano isFilling, se aumenta o disminuye el nivel de refrigerante y se actualiza el porcentaje correspondiente
         if (isFilling)
@@ -82,6 +88,13 @@ public class Refrigerante : MotorPart, IPointerDownHandler, IPointerUpHandler
         
     }
 
+
+    public override void PartDamaged()
+    {
+        currentState = PartsStates.Damaged;
+
+        ReciveImpact = true;
+    }
 
     public void OnPointerDown(PointerEventData eventData)
     {

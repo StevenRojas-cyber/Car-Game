@@ -45,6 +45,13 @@ public class PlayerComoponent : MonoBehaviour
 
     }
     
+    public Motor getPlayerMotor()
+    {
+        return playerMotor;
+    }
+
+
+
     void GameOver()
     {
         Debug.Log("Tu auto se daño, Fin del juego");

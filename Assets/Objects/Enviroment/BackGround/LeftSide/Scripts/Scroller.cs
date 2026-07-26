@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class Scroller : MonoBehaviour
 {
-    
-    public float scrollSpeed = 0.5f;
+    [Header("Background Attributes")]
+    [SerializeField] private float scrollSpeed = 0.5f;
+    [SerializeField] private Renderer backgroundRenderer;
 
-    [SerializeField] 
-    private Renderer backgroundRenderer;
+    public float GetScrollSpeed() 
+    { 
+        return scrollSpeed; 
+    }
 
-    // Update is called once per frame
     void Update()
     {
         backgroundRenderer.material.mainTextureOffset += new Vector2(0, scrollSpeed * Time.deltaTime);

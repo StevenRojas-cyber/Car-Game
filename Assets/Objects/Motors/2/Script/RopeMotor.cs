@@ -44,6 +44,10 @@ public class RopeMotor : MotorPart
     public override void PartDamaged()
     {
         currentState = PartsStates.Damaged;
+
+        RunningTime = 0f;
+
+        Debug.Log("Motor Cuerda Sufrio Daños");
     }
 
     public override void PartRepaired()

@@ -48,7 +48,16 @@ public class Hamster : MotorPart, IPointerClickHandler
 
     }
 
-    
+
+    public override void PartDamaged()
+    {
+        currentState = PartsStates.Damaged;
+
+        IsHamsterSleeped = true;
+        HamsterSleepTime = 0f;
+    }
+
+
     void SleppTimeRemaining()
     {
         if (IsHamsterSleeped) return;

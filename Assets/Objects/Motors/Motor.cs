@@ -76,8 +76,32 @@ public class Motor : MonoBehaviour
         }
 
         RepairedParts = motorPartsMap.Count;
-        Debug.Log("Parts in good state: " + RepairedParts);
+        //Debug.Log("Parts in good state: " + RepairedParts);
     }
+
+    public void DamageAnyMotorPart(int index)
+    {
+        switch (index)
+        {
+            case 1:
+                PlayerMotorParts.FuelPipe.PartDamaged();
+                break;
+
+            case 2:
+                PlayerMotorParts.RopeMotor.PartDamaged();
+                break;
+
+            case 3:
+                PlayerMotorParts.Refrigerante.PartDamaged();
+                break;
+
+            case 4:
+                PlayerMotorParts.Hamster.PartDamaged();
+                break;
+
+        }
+    }
+
 
     void UpdateMap()
     {

@@ -57,8 +57,16 @@ public class FuelPipe : MotorPart, IPointerDownHandler, IDragHandler, IBeginDrag
             Sprite.color = Color.red;
         }
     }
-    
-    
+
+    public override void PartDamaged()
+    {
+        currentState = PartsStates.Damaged;
+        AngleAcumulated = 0;
+        currentNumberOfLaps = 0;
+        AreLapsCompleted = false;
+        transform.rotation = Quaternion.Euler(0,0, AngleAcumulated);
+    }
+
     void DiscountLaps()
     {
         if (AngleAcumulated < 0)

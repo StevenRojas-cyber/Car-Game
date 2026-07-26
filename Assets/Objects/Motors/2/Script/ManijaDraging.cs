@@ -105,10 +105,6 @@ public class ManijaDraging : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
     {
         if(!CanDrag) return;
 
-        //Debug.Log("OnEndDrag");
-
-
-
         lastPosition = currentPosition;
 
         int currentVelocity = (int)CalculateVelocity(lastPosition, Time.deltaTime);
@@ -116,14 +112,13 @@ public class ManijaDraging : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
 
         if(IsTheIdealVelocity(currentVelocity))
         {
-           // Debug.Log("Ideal Velocity Reached: " + currentVelocity);
-            ropeMotor.PartRepaired();
+            ropeMotor.currentState = PartsStates.Good;
+            
             ropeMotor.SetRunningTime();
         }
         else
         {
-            //Debug.Log("Not Ideal Velocity: " + currentVelocity);
-            ropeMotor.PartDamaged();
+            ropeMotor.currentState= PartsStates.Damaged;
         }
 
         ResetPositions();
