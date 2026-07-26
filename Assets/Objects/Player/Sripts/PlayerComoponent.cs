@@ -19,13 +19,23 @@ public class PlayerComoponent : MonoBehaviour
     [Header("Player Input Actions")]
     [SerializeField] private InputActionReference moveAction;
 
+    [Header("Player UI")]
+    [SerializeField] private GameObject UiData;
+    [SerializeField] private GameObject GameOverPanel;
 
     private float Score = 0;
     private float moveDirection;
 
     void Start()
     {
+        if (UiData == null) return;
+        if (GameOverPanel == null) return;
+
            moveAction.action.Enable();
+
+
+        UiData.SetActive(true);
+        GameOverPanel.SetActive(false);
     }
 
     
@@ -50,11 +60,21 @@ public class PlayerComoponent : MonoBehaviour
         return playerMotor;
     }
 
+    public float getScore()
+    {
+        return Score;
+    }
 
 
     void GameOver()
     {
         Debug.Log("Tu auto se daño, Fin del juego");
+        moveAction.action.Disable();
+
+        Time.timeScale = 0f;
+
+        UiData.SetActive(false);
+        GameOverPanel.SetActive(true);
     }
 
     void gainScore(float scoreMultiplier)

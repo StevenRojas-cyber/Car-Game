@@ -3,7 +3,7 @@ using UnityEngine;
 public class Scroller : MonoBehaviour
 {
     [Header("Background Attributes")]
-    [SerializeField] private float scrollSpeed = 0.5f;
+    [SerializeField] public float scrollSpeed = 0.5f;
     [SerializeField] private Renderer backgroundRenderer;
 
     public float GetScrollSpeed() 

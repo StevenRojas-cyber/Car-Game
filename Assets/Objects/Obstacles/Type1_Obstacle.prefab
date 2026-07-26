@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 4744345569616935224}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.29, y: 4.13, z: 0}
-  m_LocalScale: {x: 3.2449, y: 1, z: 1}
+  m_LocalPosition: {x: -2.35, y: 1.98, z: 0}
+  m_LocalScale: {x: 0.23361343, y: 0.23361343, z: 0.23361343}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: c711f5d1b17266449bfe6b70c5b534b2, type: 3}
+  m_Sprite: {fileID: 4632243149168264535, guid: fa869ff4f8dbfa942a4eaba7e90cbbe6, type: 3}
   m_Color: {r: 1, g: 0.9780377, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -128,17 +128,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0004988611, y: -0.0041890144}
+  m_Offset: {x: 1.1496477, y: -1.4007959}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 20.960001, y: 7.0207815}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1305888, y: 1.4091444}
+  m_Size: {x: 15.523855, y: 3.3479633}
   m_EdgeRadius: 0
 --- !u!61 &5304850065082350378
 BoxCollider2D:
@@ -174,17 +174,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.032826535, y: 0.040391803}
+  m_Offset: {x: 0.8543596, y: -1.4055071}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 20.960001, y: 7.0207815}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.12364441, y: 0.4830916}
+  m_Size: {x: 5.64435, y: 1.2717638}
   m_EdgeRadius: 0
 --- !u!114 &3298740533623095582
 MonoBehaviour:
@@ -199,5 +199,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   HitBox: {fileID: 2256933848312013907}
-  BackGround: {fileID: 0}
-  moveMultiplier: 3
+  moveMultiplier: 7.5

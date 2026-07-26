@@ -21,7 +21,7 @@ public class Motor : MonoBehaviour
     [SerializeField] public GameObject FuelPipe;
 
 
-    private int RepairedParts;
+    private int RepairedParts = 4;
     public motorParts PlayerMotorParts;
     public Dictionary<string,  PartsStates> motorPartsMap = new Dictionary<string, PartsStates>();
 

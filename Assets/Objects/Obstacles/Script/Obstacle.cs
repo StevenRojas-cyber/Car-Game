@@ -5,7 +5,7 @@ public class Obstacle : MonoBehaviour
 {
     [Header("Obtacle Attributes")]
     [SerializeField] private BoxCollider2D HitBox;
-    [SerializeField] private float moveMultiplier;
+    [SerializeField] public float moveMultiplier;
 
 
     private Scroller scrollVelocity;
