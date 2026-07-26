@@ -199,4 +199,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   HitBox: {fileID: 2256933848312013907}
-  moveMultiplier: 7.5
+  moveMultiplier: 3.5

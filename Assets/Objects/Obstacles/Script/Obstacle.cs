@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Obstacle : MonoBehaviour
 {
@@ -12,28 +13,28 @@ public class Obstacle : MonoBehaviour
 
     void Start()
     {
-        
+
 
 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision == null) return;
+        if (collision == null) return;
 
         if (collision.CompareTag("Player"))
         {
 
             Motor userMotor = collision.GetComponent<Motor>();
 
-            int RandomDamage = Random.Range(1,4);
+            int RandomDamage = Random.Range(1, 4);
 
             userMotor.DamageAnyMotorPart(RandomDamage);
 
             Destroy(this.gameObject);
         }
 
-        
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -52,7 +53,9 @@ public class Obstacle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 movement = new Vector3(0, (moveMultiplier * Time.deltaTime) * -1, 0);
+        float velocidadFinal = moveMultiplier + SpeedManager.velocidadExtraObstaculos;
+        Vector3 movement = new Vector3(0, (velocidadFinal * Time.deltaTime) * -1, 0);
+
         transform.Translate(movement);
     }
 }

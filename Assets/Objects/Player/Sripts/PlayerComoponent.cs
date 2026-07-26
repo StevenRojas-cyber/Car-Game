@@ -26,6 +26,12 @@ public class PlayerComoponent : MonoBehaviour
     private float Score = 0;
     private float moveDirection;
 
+    private void Awake()
+    {
+        Time.timeScale = 1f;
+    }
+
+
     void Start()
     {
         if (UiData == null) return;
