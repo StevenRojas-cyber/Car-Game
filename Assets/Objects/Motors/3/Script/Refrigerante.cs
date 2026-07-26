@@ -17,7 +17,7 @@ public class Refrigerante : MotorPart, IPointerDownHandler, IPointerUpHandler
     void Start()
     {
         PartName = "Refrigerante";
-        currentState = PartsStates.Repaired;
+        currentState = PartsStates.Good;
 
         CurrentRefrigerantePercentage = Mathf.FloorToInt((CurrentLevelFiled / MaxRefrigeranteLevel) * 100f);
 
@@ -66,25 +66,33 @@ public class Refrigerante : MotorPart, IPointerDownHandler, IPointerUpHandler
         if (CurrentRefrigerantePercentage <= 20)
         {
             currentState = PartsStates.Damaged;
-        }
-        else
-        {
-            currentState = PartsStates.Repaired;
+
         }
 
+        if(CurrentRefrigerantePercentage <= 70 && CurrentRefrigerantePercentage > 20)
+        {
+            currentState = PartsStates.Danger;
+        }
+
+        if(CurrentRefrigerantePercentage <= 100 &&  CurrentRefrigerantePercentage > 70)
+        {
+            currentState = PartsStates.Good;
+        }
+
+        
     }
 
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log($"You clicked on {PartName}");
+        //Debug.Log($"You clicked on {PartName}");
         
         isFilling = true;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        Debug.Log($"You released the click on {PartName}");
+        //Debug.Log($"You released the click on {PartName}");
         
         isFilling = false;
     }

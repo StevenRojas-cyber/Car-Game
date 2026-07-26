@@ -76,7 +76,7 @@ public class ManijaDraging : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
     //Logica de arrastre de la manija, para que al arrastrarla se mueva el motor de cuerda
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("Clickeado: " + name);
+        //Debug.Log("Clickeado: " + name);
     }
 
 
@@ -85,7 +85,7 @@ public class ManijaDraging : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
     {
         if(!CanDrag) return;
     
-        Debug.Log("OnBeginDrag");
+       // Debug.Log("OnBeginDrag");
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -105,7 +105,7 @@ public class ManijaDraging : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
     {
         if(!CanDrag) return;
 
-        Debug.Log("OnEndDrag");
+        //Debug.Log("OnEndDrag");
 
 
 
@@ -116,13 +116,13 @@ public class ManijaDraging : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
 
         if(IsTheIdealVelocity(currentVelocity))
         {
-            Debug.Log("Ideal Velocity Reached: " + currentVelocity);
+           // Debug.Log("Ideal Velocity Reached: " + currentVelocity);
             ropeMotor.PartRepaired();
             ropeMotor.SetRunningTime();
         }
         else
         {
-            Debug.Log("Not Ideal Velocity: " + currentVelocity);
+            //Debug.Log("Not Ideal Velocity: " + currentVelocity);
             ropeMotor.PartDamaged();
         }
 

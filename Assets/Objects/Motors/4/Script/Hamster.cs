@@ -6,17 +6,18 @@ using UnityEngine.EventSystems;
 public class Hamster : MotorPart, IPointerClickHandler
 {
     [Header("Hamster Properties")]
-    [SerializeField] private int HamsterSleepChance = 50;
     [SerializeField] private float SleepTimeRemainingMultiplier = 1f;
     [SerializeField] private float HamsterSleepTime = 5f;
     [SerializeField] private SpriteRenderer HamsterSprite;
     [SerializeField] private TMP_Text SleepTimeText;
 
-    bool IsHamsterSleeped = true;
+    bool IsHamsterSleeped;
     
     void Start()
     {
         PartName = "Hamster";
+        IsHamsterSleeped = false;
+        HamsterSleepTime = 100f;
     }
 
     
@@ -28,12 +29,22 @@ public class Hamster : MotorPart, IPointerClickHandler
             HamsterSprite.color = Color.red;
             currentState = PartsStates.Damaged;
         }
-        else
+
+        if (!IsHamsterSleeped && HamsterSleepTime > 0f && HamsterSleepTime <= 50f)
+        {
+            SleppTimeRemaining();
+            currentState = PartsStates.Danger;
+            HamsterSprite.color = Color.yellow;
+        }
+
+        if (!IsHamsterSleeped && HamsterSleepTime >= 50f)
         {
             SleppTimeRemaining();
             HamsterSprite.color = Color.green;
-            currentState = PartsStates.Repaired;
+            currentState = PartsStates.Good;
         }
+        
+        
 
     }
 
@@ -44,7 +55,7 @@ public class Hamster : MotorPart, IPointerClickHandler
 
         HamsterSleepTime -= SleepTimeRemainingMultiplier * Time.deltaTime;
 
-        SleepTimeText.text = HamsterSleepTime.ToString() + " 's";
+        SleepTimeText.text = (int)(HamsterSleepTime) + " 's";
 
         if (HamsterSleepTime <= 0f)
         {
@@ -66,7 +77,7 @@ public class Hamster : MotorPart, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Hamster clicked");
+        //Debug.Log("Hamster clicked");
 
         if(!IsHamsterSleeped) return;
 

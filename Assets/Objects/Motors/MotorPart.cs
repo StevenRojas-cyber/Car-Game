@@ -4,7 +4,8 @@ using UnityEngine;
 public enum PartsStates
 {
     Damaged,
-    Repaired
+    Good,
+    Danger
 }
 
 public abstract class MotorPart : MonoBehaviour

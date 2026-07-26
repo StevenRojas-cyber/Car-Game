@@ -14,7 +14,6 @@ public class FuelPipe : MotorPart, IPointerDownHandler, IDragHandler, IBeginDrag
 
 
     private bool AreLapsCompleted = false;
-    private int MaxLapsInDegrees;
     private int currentNumberOfLaps;
     private float PreviousAngle = 0f;
     private float AngleAcumulated;
@@ -26,12 +25,12 @@ public class FuelPipe : MotorPart, IPointerDownHandler, IDragHandler, IBeginDrag
     void Start()
     {
         PartName = "Fuel Pipe";
-        currentState = PartsStates.Repaired;
-
-
-        MaxLapsInDegrees = MaxFuelKeyLaps * 360;
+        currentState = PartsStates.Good;
         mainCamera = Camera.main;
-        transform.rotation = Quaternion.Euler(0,0,MaxLapsInDegrees);
+        
+        AngleAcumulated = MaxFuelKeyLaps * -360;
+
+        transform.rotation = Quaternion.Euler(0, 0, AngleAcumulated);
     }
 
     
@@ -39,12 +38,19 @@ public class FuelPipe : MotorPart, IPointerDownHandler, IDragHandler, IBeginDrag
     {
         DiscountLaps();
 
-        if(AreLapsCompleted)
+        if(AreLapsCompleted || currentNumberOfLaps >= (MaxFuelKeyLaps / 2))
         {
-            currentState = PartsStates.Repaired;
+            currentState = PartsStates.Good;
             Sprite.color = Color.green;
         }
-        else
+
+        if (!AreLapsCompleted && currentNumberOfLaps < (MaxFuelKeyLaps / 2) && currentNumberOfLaps > 0)
+        {
+            currentState = PartsStates.Danger;
+            Sprite.color = Color.yellow;
+        }
+
+        if(!AreLapsCompleted && currentNumberOfLaps <=0)
         {
             currentState = PartsStates.Damaged;
             AreLapsCompleted = false;
@@ -122,14 +128,9 @@ public class FuelPipe : MotorPart, IPointerDownHandler, IDragHandler, IBeginDrag
         if( currentNumberOfLaps >= MaxFuelKeyLaps )
         {
             AreLapsCompleted = true;
-            Debug.Log("Listas Las vueltas!!");
+           
         }
-        else
-        {
-            Debug.Log("Laps: " +  currentNumberOfLaps);
-        }
-
-
+       
     }
 
     public void OnEndDrag(PointerEventData eventData)

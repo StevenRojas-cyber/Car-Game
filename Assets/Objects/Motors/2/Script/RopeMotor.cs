@@ -14,7 +14,8 @@ public class RopeMotor : MotorPart
     void Start()
     {
         PartName = "Rope Motor";
-        currentState = PartsStates.Damaged;
+        RunningTime = 30f;
+        currentState = PartsStates.Good;
         
     }
 
@@ -26,7 +27,11 @@ public class RopeMotor : MotorPart
                 Sprite.color = Color.red;
                 break;
 
-            case PartsStates.Repaired:
+            case PartsStates.Danger:
+                Sprite.color = Color.yellow;
+                break;
+
+            case PartsStates.Good:
                 Sprite.color = Color.green;
                 break;
         }
@@ -43,7 +48,7 @@ public class RopeMotor : MotorPart
 
     public override void PartRepaired()
     {
-        currentState = PartsStates.Repaired;
+        currentState = PartsStates.Good;
     }
 
 
@@ -69,9 +74,21 @@ public class RopeMotor : MotorPart
     public void RuninTimeRemaining()
     {
         RunningTime -= Time.deltaTime;
+
         if (RunningTime <= 0f)
         {
             currentState = PartsStates.Damaged;
+            return;
         }
+
+        if(RunningTime > 0f && RunningTime <= 15)
+        {
+            currentState = PartsStates.Danger;
+        }
+        else
+        {
+            currentState = PartsStates.Good;
+        }
+        
     }
 }
