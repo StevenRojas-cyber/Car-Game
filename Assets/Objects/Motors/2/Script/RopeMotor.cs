@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 public class RopeMotor : MotorPart
 {
     [Header("Rope Motor Properties")]
-    [SerializeField] private float DragIdealSpeed = 1f;
+    [SerializeField] private float DragIdealSpeed = 500f;
     [SerializeField] private GameObject Manija;
     [SerializeField] private SpriteRenderer Sprite;
     

@@ -4940,7 +4940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   PartName: 
   currentState: 0
-  DragIdealSpeed: 1500
+  DragIdealSpeed: 500
   Manija: {fileID: 2002450102}
   Sprite: {fileID: 8893368525538895063}
 --- !u!212 &8893368525538895063 stripped
